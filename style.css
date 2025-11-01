@@ -1,31 +1,59 @@
 body {
   font-family: sans-serif;
   text-align: center;
-  margin-top: 5vh;
-  font-size: 5vw; /* 모바일에서 크게 보이도록 */
+  margin-top: 50px;
+  font-size: 18px; /* 기본 PC 화면용 */
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 input {
-  padding: 3vw;
-  font-size: 5vw;
+  padding: 12px;
+  font-size: 18px;
   width: 80%;
   max-width: 400px;
+  margin-bottom: 15px;
 }
 
 button {
-  padding: 3vw 5vw;
-  margin: 2vw;
-  font-size: 5vw;
+  padding: 12px 20px;
+  margin: 8px;
+  font-size: 18px;
+  border-radius: 8px;
 }
 
 #count {
   font-weight: bold;
   color: darkblue;
+  font-size: 18px;
 }
 
-/* PC 화면에서는 너무 커지지 않게 조정 */
-@media (min-width: 768px) {
+/* 📱 모바일 전용 (가로폭 600px 이하) */
+@media (max-width: 600px) {
   body {
+    font-size: 6vw; /* 화면 너비 기준으로 글자 크기 */
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  input {
+    font-size: 6vw;
+    padding: 4vw;
+    width: 90%;
+    max-width: none;
+  }
+  button {
+    font-size: 6vw;
+    padding: 4vw 6vw;
+    margin: 3vw;
+  }
+  #count {
+    font-size: 6vw;
+  }
+}
     font-size: 18px;
   }
   input, button {
@@ -40,4 +68,5 @@ button {
     padding: 14px;
   }
 }
+
 
