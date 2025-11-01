@@ -2,16 +2,34 @@ body {
   font-family: sans-serif;
   text-align: center;
   margin-top: 50px;
+  font-size: 18px; /* 기본 글자 크기 키움 */
 }
+
 input {
-  padding: 10px;
-  font-size: 16px;
+  padding: 12px;
+  font-size: 18px;
+  width: 80%;       /* 화면 넓이에 맞게 */
+  max-width: 300px; /* 너무 넓어지지 않게 제한 */
 }
+
 button {
-  padding: 10px;
-  margin: 5px;
+  padding: 12px 20px;
+  margin: 8px;
+  font-size: 18px;
 }
+
 #count {
   font-weight: bold;
   color: darkblue;
+}
+
+/* 📱 모바일 화면에서 더 크게 */
+@media (max-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+  input, button {
+    font-size: 20px;
+    padding: 14px;
+  }
 }
