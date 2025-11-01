@@ -1,60 +1,31 @@
+/* 기본 PC용 */
 body {
   font-family: sans-serif;
   text-align: center;
   margin-top: 50px;
-  font-size: 36px; /* 기본 글자 크기 2배 */
+  font-size: 20px;
 }
 
 h1 {
-  font-size: 56px; /* 제목 크게 */
-  margin-bottom: 30px;
+  font-size: 32px;
 }
 
-input {
-  padding: 12px;
-  font-size: 36px; /* 입력창 글자 크게 */
-  width: 80%;
-  max-width: 500px;
-  margin-bottom: 20px;
+input, button, #count {
+  font-size: 20px;
 }
 
-button {
-  padding: 12px 20px;
-  margin: 8px;
-  font-size: 18px; /* 버튼은 그대로 */
-  border-radius: 8px;
-}
-
-#count {
-  font-weight: bold;
-  color: darkblue;
-  font-size: 36px; /* 카운트 글자 크게 */
-}
-
-/* 📱 모바일 전용 (가로폭 600px 이하) */
+/* 📱 모바일 전용 */
 @media (max-width: 600px) {
   body {
-    font-size: 12vw; /* 모바일에서 글자 확 크게 */
+    font-size: 8vw; /* 전체 글자 크게 */
   }
   h1 {
-    font-size: 14vw;
+    font-size: 10vw;
   }
-  input {
-    font-size: 12vw;
-    padding: 4vw;
-    width: 90%;
-    max-width: none;
-  }
-  button {
-    font-size: 6vw; /* 버튼은 그대로 */
-    padding: 4vw 6vw;
-    margin: 3vw;
-  }
-  #count {
-    font-size: 12vw;
+  input, button, #count {
+    font-size: 8vw;
   }
 }
-
 
 
 
