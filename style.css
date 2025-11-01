@@ -1,21 +1,21 @@
 body {
   font-family: sans-serif;
   text-align: center;
-  margin-top: 50px;
-  font-size: 18px; /* 기본 글자 크기 키움 */
+  margin-top: 5vh;
+  font-size: 5vw; /* 모바일에서 크게 보이도록 */
 }
 
 input {
-  padding: 12px;
-  font-size: 18px;
-  width: 80%;       /* 화면 넓이에 맞게 */
-  max-width: 300px; /* 너무 넓어지지 않게 제한 */
+  padding: 3vw;
+  font-size: 5vw;
+  width: 80%;
+  max-width: 400px;
 }
 
 button {
-  padding: 12px 20px;
-  margin: 8px;
-  font-size: 18px;
+  padding: 3vw 5vw;
+  margin: 2vw;
+  font-size: 5vw;
 }
 
 #count {
@@ -23,9 +23,16 @@ button {
   color: darkblue;
 }
 
-/* 📱 모바일 화면에서 더 크게 */
-@media (max-width: 600px) {
+/* PC 화면에서는 너무 커지지 않게 조정 */
+@media (min-width: 768px) {
   body {
+    font-size: 18px;
+  }
+  input, button {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
     font-size: 20px;
   }
   input, button {
@@ -33,3 +40,4 @@ button {
     padding: 14px;
   }
 }
+
