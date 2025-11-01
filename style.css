@@ -13,8 +13,8 @@ h1 {
 input {
   padding: 12px;
   font-size: 20px;
-  width: 80%;
-  max-width: 400px;
+  width: 40%;
+  max-width: 200px;
   margin-bottom: 15px;
 }
 
@@ -34,16 +34,16 @@ button {
 /* 📱 모바일 전용 (가로폭 600px 이하) */
 @media (max-width: 600px) {
   body {
-    font-size: 8vw; /* 전체 글자 크게 */
+    font-size: 15vw; /* 전체 글자 크게 */
   }
   h1 {
-    font-size: 10vw;
+    font-size: 15vw;
   }
   input {
-    font-size: 8vw;   /* 글자 크게 */
+    font-size: 15vw;   /* 글자 크게 */
     padding: 3vw;
-    width: 70%;       /* 입력칸 줄임 */
-    max-width: none;
+    width: 40%;       /* 입력칸 줄임 */
+    max-width: 180px;
   }
   button {
     font-size: 7vw;
@@ -54,6 +54,7 @@ button {
     font-size: 8vw;
   }
 }
+
 
 
 
