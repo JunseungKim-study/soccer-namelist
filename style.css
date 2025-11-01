@@ -46,14 +46,15 @@ button {
     max-width: 180px;
   }
   button {
-    font-size: 7vw;
+    font-size: 15vw;
     padding: 3vw 5vw;
     margin: 3vw;
   }
   #count {
-    font-size: 8vw;
+    font-size: 15vw;
   }
 }
+
 
 
 
