@@ -1,3 +1,4 @@
+/* ✅ 기본 PC용 스타일 */
 body {
   font-family: sans-serif;
   text-align: center;
@@ -9,13 +10,6 @@ h1 {
   font-size: 32px;
   margin-bottom: 20px;
 }
-
-.info {
-  font-size: 18px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 10px;
 
 input {
   padding: 12px;
@@ -38,6 +32,7 @@ button {
   font-size: 20px;
 }
 
+/* 📱 모바일 전용 스타일 (가로폭 600px 이하) */
 @media (max-width: 600px) {
   body {
     font-size: 22px;
@@ -45,10 +40,6 @@ button {
 
   h1 {
     font-size: 28px;
-  }
-
-  .info {
-    font-size: 18px;
   }
 
   input {
@@ -70,6 +61,7 @@ button {
     font-size: 20px;
   }
 }
+
 
 
 
