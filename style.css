@@ -31,29 +31,33 @@ button {
   font-size: 20px;
 }
 
-/* 📱 모바일 전용 (가로폭 600px 이하) */
 @media (max-width: 600px) {
   body {
-    font-size: 20vw; /* 전체 글자 크게 */
+    font-size: 22px;
   }
+
   h1 {
-    font-size: 20vw;
+    font-size: 28px;
   }
+
   input {
-    font-size: 20vw;   /* 글자 크게 */
-    padding: 3vw;
-    width: 20%;       /* 입력칸 줄임 */
-    max-width: 180px;
+    font-size: 20px;
+    padding: 12px;
+    width: 80%;
+    max-width: 250px;
   }
+
   button {
-    font-size: 20vw;
-    padding: 3vw 5vw;
-    margin: 3vw;
+    font-size: 20px;
+    padding: 10px 16px;
+    margin: 8px;
   }
+
   #count {
-    font-size: 20vw;
+    font-size: 20px;
   }
 }
+
 
 
 
