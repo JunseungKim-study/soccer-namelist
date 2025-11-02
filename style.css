@@ -3,7 +3,7 @@ body {
   font-family: sans-serif;
   text-align: center;
   margin-top: 50px;
-  font-size: 20px; /* 기본 PC용 */
+  font-size: 20px;
 }
 
 h1 {
@@ -12,18 +12,22 @@ h1 {
 }
 
 input {
-  padding: 12px;
-  font-size: 20px;
-  width: 50%;
-  max-width: 200px;
+  padding: 16px;               /* ✅ 더 넓은 패딩 */
+  font-size: 22px;             /* ✅ 글자 크기 키움 */
+  width: 60%;                  /* ✅ 너비 넉넉하게 */
+  max-width: 280px;
   margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 button {
-  padding: 12px 20px;
-  margin: 8px;
-  font-size: 20px;
+  padding: 16px 24px;          /* ✅ 클릭 영역 넓힘 */
+  margin: 10px;
+  font-size: 22px;             /* ✅ 글자 크기 키움 */
   border-radius: 8px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #count {
@@ -35,28 +39,32 @@ button {
 /* 📱 모바일 전용 스타일 (가로폭 600px 이하) */
 @media (max-width: 600px) {
   body {
-    font-size: 22px;
+    font-size: 24px;           /* ✅ 전체 글자 크기 키움 */
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   input {
-    font-size: 20px;
-    padding: 12px;
-    width: 70%;
-    max-width: 250px;
+    font-size: 24px;
+    padding: 18px;
+    width: 85%;
+    max-width: 320px;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   button {
-    font-size: 20px;
-    padding: 10px 16px;
-    margin: 8px;
+    font-size: 24px;
+    padding: 18px 26px;
+    margin: 12px;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   #count {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
